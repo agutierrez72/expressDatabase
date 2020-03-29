@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../static/bootstrap/bootstrap.min.css">
+    <script src="../static/jquery/jquery.js"></script>
+    <script src="../static/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+    
+
+  <h1>
+    <center>
+    Sign Up
+      </center>
+  </h1>
+
+
+<center>
+<table border="0">
+
+<form action = "/getinfo" method= "POST">
+<tr>
+	<td>First Name</td>
+	<td><input type="text" name="firstName" size="30" /></td>
+</tr>
+
+
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="lastName" size="30" /></td>
+</tr>
+
+
+<tr>
+<td>Password</td>
+<td><input type="text" name="password" size="30" /></td>
+</tr>
+
+
+<tr>
+<td>Confirm Password</td>
+<td><input type="text" name="password2" size="30" /></td>
+</tr>
+</table>
+<!--Check if password matches confirmed password -->
+
+<br>
+<br>
+<br>
+
+<table>
+<h3>Optional Information</h3>
+
+<tr>
+	<td>City</td>
+	<td align="center"><input type="text" name="cityaddress" size="30"  /></td>
+</tr>
+
+
+
+<tr>
+<td>State</td>
+<td align="center"><input type="text" name="state" size="30" /></td>
+</tr>
+
+
+
+<tr>
+<td>Country</td>
+<td align="center"><input type="text" name="country" size="30" /></td>
+</tr>
+
+
+
+<tr>
+<td>Zip Code</td>
+<td align="center"><input type="text" name="zip_code" size="30" /></td>
+</tr>
+
+
+
+</table>
+  </center>
+<center>
+
+  <tr>
+    
+      <button id= "signup" type="submit">Sign Up</button>
+    
+  </tr>
+
+  </center>
+</form>
+</body>
+</html>
