@@ -1,0 +1,48 @@
+<h1>Sign Up</h1>
+        <div id="error"></div>
+        
+        <div class="container">
+            <form id="login" action="/users" method="POST">
+                <div style="margin:15px">
+                    <input class="col-md-4 form-control" name="firstName" id="firstName" type="text" placeholder="Enter First Name" required>
+                </div>
+                <div style="margin:15px">
+                    <input class="col-md-4 form-control" name="lastName" id="lastName" type="text" placeholder="Enter Last Name" required>
+                </div>
+                <div style="margin:15px">
+                    <input class="col-md-4 form-control" name="userName" id="userName" type="text" placeholder="Enter Username" required>
+                </div>
+                
+                <div style="margin:15px">
+                    <input class="col-md-4 form-control" name="password" id="password" type="password" placeholder="Enter Password" required>
+                </div>
+                <div style="margin:15px">
+                    <input class="col-md-4 form-control" name="password2" id="password2" type="password" placeholder="Confirm Password" required>
+                </div>
+
+
+                <h2>Optional Information</h2>
+                <div style="margin:15px">
+                    <input class="col-md-4 form-control" name="city" id="city" type="text" placeholder="City" >
+                </div>
+                <div style="margin:15px">
+                    <input class="col-md-4 form-control" name="state" id="state" type="text" placeholder="State" >
+                </div>
+                <div style="margin:15px">
+                    <input class="col-md-4 form-control" name="country" id="country" type="text" placeholder="Country" >
+                </div>
+                
+                <div style="margin:15px">
+                    <input class="col-md-4 form-control" name="zipcode" id="zipcode" type="text" placeholder="Zipcode" >
+                </div>
+    
+                <div style="margin:15px">
+                    <button class=" col-md-4 btn btn-primary form-control" onsubmit="location.href='signup'" type="submit">Sign Up</button>
+                </div>
+        
+                <!-- <a href="signin" style="margin: 15px" class="buttonTwo">Sign In</a> -->
+                
+                <a href="/users" style="margin: 15px; color:grey" class="buttonThree">Cancel</a>            
+                
+            </form>
+        </div>
