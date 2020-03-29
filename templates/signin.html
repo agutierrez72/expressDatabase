@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../static/bootstrap/bootstrap.min.css">
+    <script src="../static/jquery/jquery.js"></script>
+    <script src="../static/bootstrap/bootstrap.min.js"></script>
+    <script defer src="../static/main.js"></script>
+</head>
+<body>
+    <center style="margin-top: 70px">
+    <h1>Sign In</h1>
+    <div id="error"></div>
+    
+    <div class="container">
+        <form id="login" action="/signin" method="POST">
+            
+            <div style="margin:15px">
+                <input class="col-md-4 form-control" name="userName" id="userName" type="text" placeholder="Enter Username" required>
+            </div>
+            
+            <div style="margin:15px">
+                <input class="col-md-4 form-control" name="password" id="password" type="password" placeholder="Enter Password" required>
+            </div>
+
+            <div style="margin:15px">
+                <button class=" col-md-4 btn btn-primary form-control" onsubmit="location.href='homepage'" type="submit">Log In</button>
+            </div>
+    
+            <a href="signup" style="margin: 15px" class="buttonTwo">Create Account</a>
+            
+            <a href style="margin: 15px; color:grey" class="buttonThree">Forgot Password</a>            
+            
+        </form>
+    </div>
+    </center>
+</body>
+</html>
