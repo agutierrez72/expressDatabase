@@ -3,15 +3,15 @@ const mongoose = require('mongoose')
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
-        required
+        required: true
     },
     username: {
         type: String,
-        required
+        required: true
     },
     password: {
         type: String,
-        required
+        required: true
     },
     location: {
         city: {
@@ -28,8 +28,8 @@ const userSchema = new mongoose.Schema({
         }
     },
     admin:{
-        type: bool
+        type: Boolean
     }
 })
 
-module.exports = mongoose.model('user', userSchema)
+module.exports = mongoose.model('User', userSchema)
